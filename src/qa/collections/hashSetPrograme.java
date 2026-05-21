@@ -1,45 +1,31 @@
 package qa.collections;
 
-import java.lang.foreign.AddressLayout;
 import java.util.HashSet;
 import java.util.Iterator;
-
-import javax.print.DocFlavor.STRING;
-
-import org.w3c.dom.NamedNodeMap;
-
-import qa.loop.forEach;
 
 public class hashSetPrograme {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
-		HashSet<STRING> nameset = new HashSet<>();
-		nameset.add(null);
-		nameset.add(null);
-		nameset.add(null);
-		nameset.add(null);
+	HashSet<String> fruitSet = new HashSet<>();
+	fruitSet.add("mango");
+	fruitSet.add("mango");
+	fruitSet.add("cucumber");
+	
+	//iterate inside the array
+	Iterator<String> it = fruitSet.iterator();
+	
+	while (it.hasNext()) {
+		System.out.println(it.next());
 		
-		
-		
-		System.out.println(nameset);
-		
-		
-		for(STRING name : nameset);{
-		System.out.println(nameset);
-		}
-		
-//		Iterator<String> nameIterator = nameset.iterator(){
-//			while (nameset.hasNext()) {
-//				System.out.println(name.next);}
-//				
-			}
-		
-		
-			
-			
-
 	}
+	//took specific value
+	for ( String fruit : fruitSet) {
+		System.out.println(fruit);
+	}
+	
+	System.out.println(fruitSet);
+	}
+}
 
 
