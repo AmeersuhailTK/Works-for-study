@@ -1,5 +1,6 @@
 package qa.interfaceClass;
 
+import qa.inHeritence.childClass;
 
 public interface Main {
 	
